@@ -1,0 +1,531 @@
+; =================================================================
+; THpropensities_complete.dat
+; Complete Gly-X-Y triplet Tm database for THeBuScr
+; =================================================================
+;
+; PROVENANCE:
+;   Experimental values:    81
+;   Additivity (Eq. 2):     339
+;   Fallback estimates:      21
+;   Total:                   441 / 441
+;
+; Experimental sources:
+;   [P2000] Persikov et al. Biochemistry 39(48):14960 (2000)
+;   [P2002] Persikov et al. JMB 316:385 (2002)
+;   [P2005] Persikov et al. JBC 280:19343 (2005)
+;
+; Additivity formula (Eq. 2 from P2005):
+;   Tm(GXY) = Tm(GXO) + Tm(GPY) - Tm(GPO)
+;
+; Fallback: for triplets missing one component (mainly Gly-O-Y),
+; the missing component is replaced with the average destabilization
+; across all measured residues at that position.
+;
+; Any G-X-Y propensities not listed will be calculated as an average
+; of the appropriate pair of G-X-Hyp and G-Pro-Y. Any non-Gly G-
+; positions will return a propensity of 0, unless Tcl script itself
+; is modified.
+;
+
+; =================================================================
+; EXPERIMENTAL VALUES
+; =================================================================
+
+; Reference triplet [P2000]
+GPO 47.3
+
+; Gly-Pro-Y series [P2000]
+GPA 40.9
+GPC 37.7
+GPD 34.0
+GPE 39.7
+GPF 28.3
+GPG 32.7
+GPH 35.7
+GPI 41.5
+GPK 36.8
+GPL 31.7
+GPM 42.6
+GPN 30.3
+GPP 41.1
+GPQ 41.3
+GPR 47.2
+GPS 35.0
+GPT 39.7
+GPV 40.0
+GPW 26.1
+GPY 30.2
+
+; Gly-X-Hyp series [P2000]
+GAO 41.7
+GCO 36.1
+GDO 40.1
+GEO 42.9
+GFO 33.5
+GGO 33.2
+GHO 36.5
+GIO 38.4
+GKO 41.5
+GLO 39.0
+GMO 38.6
+GNO 38.3
+GQO 40.4
+GRO 40.6
+GSO 38.0
+GTO 36.2
+GVO 38.9
+GWO 31.9
+GYO 34.3
+
+; Mixed Gly-X-Y [P2002] + GPP [P2005]
+GAA 32.9
+GAD 33.0
+GAF 21.9
+GAK 30.8
+GAL 27.8
+GAR 38.2
+GAS 33.0
+GDA 31.6
+GDK 30.9
+GDR 37.1
+GEA 34.6
+GED 29.7
+GEK 35.0
+GEN 29.5
+GEQ 37.7
+GER 40.4
+GET 35.9
+GEV 35.3
+GFA 24.1
+GGA 26.0
+GGF 19.7
+GGK 26.9
+GGL 25.3
+GIA 33.9
+GKD 35.8
+GKE 35.3
+GKN 31.7
+GKQ 38.9
+GKR 39.1
+GLA 31.2
+GLK 31.1
+GLL 26.9
+GLQ 35.7
+GMK 31.7
+GQK 32.6
+GQR 39.5
+GRD 34.5
+GRE 33.8
+GRK 29.5
+GRS 30.5
+GVK 32.5
+
+; =================================================================
+; COMPUTED VIA ADDITIVITY (Eq. 2)
+; Tm(GXY) = Tm(GXO) + Tm(GPY) - Tm(GPO)
+; =================================================================
+
+; Gly-A-Y series
+GAC 32.1
+GAE 34.1
+GAG 27.1
+GAH 30.1
+GAI 35.9
+GAM 37.0
+GAN 24.7
+GAP 35.5
+GAQ 35.7
+GAT 34.1
+GAV 34.4
+GAW 20.5
+GAY 24.6
+
+; Gly-C-Y series
+GCA 29.7
+GCC 26.5
+GCD 22.8
+GCE 28.5
+GCF 17.1
+GCG 21.5
+GCH 24.5
+GCI 30.3
+GCK 25.6
+GCL 20.5
+GCM 31.4
+GCN 19.1
+GCP 29.9
+GCQ 30.1
+GCR 36.0
+GCS 23.8
+GCT 28.5
+GCV 28.8
+GCW 14.9
+GCY 19.0
+
+; Gly-D-Y series
+GDC 30.5
+GDD 26.8
+GDE 32.5
+GDF 21.1
+GDG 25.5
+GDH 28.5
+GDI 34.3
+GDL 24.5
+GDM 35.4
+GDN 23.1
+GDP 33.9
+GDQ 34.1
+GDS 27.8
+GDT 32.5
+GDV 32.8
+GDW 18.9
+GDY 23.0
+
+; Gly-E-Y series
+GEC 33.3
+GEE 35.3
+GEF 23.9
+GEG 28.3
+GEH 31.3
+GEI 37.1
+GEL 27.3
+GEM 38.2
+GEP 36.7
+GES 30.6
+GEW 21.7
+GEY 25.8
+
+; Gly-F-Y series
+GFC 23.9
+GFD 20.2
+GFE 25.9
+GFF 14.5
+GFG 18.9
+GFH 21.9
+GFI 27.7
+GFK 23.0
+GFL 17.9
+GFM 28.8
+GFN 16.5
+GFP 27.3
+GFQ 27.5
+GFR 33.4
+GFS 21.2
+GFT 25.9
+GFV 26.2
+GFW 12.3
+GFY 16.4
+
+; Gly-G-Y series
+GGC 23.6
+GGD 19.9
+GGE 25.6
+GGG 18.6
+GGH 21.6
+GGI 27.4
+GGM 28.5
+GGN 16.2
+GGP 27.0
+GGQ 27.2
+GGR 33.1
+GGS 20.9
+GGT 25.6
+GGV 25.9
+GGW 12.0
+GGY 16.1
+
+; Gly-H-Y series
+GHA 30.1
+GHC 26.9
+GHD 23.2
+GHE 28.9
+GHF 17.5
+GHG 21.9
+GHH 24.9
+GHI 30.7
+GHK 26.0
+GHL 20.9
+GHM 31.8
+GHN 19.5
+GHP 30.3
+GHQ 30.5
+GHR 36.4
+GHS 24.2
+GHT 28.9
+GHV 29.2
+GHW 15.3
+GHY 19.4
+
+; Gly-I-Y series
+GIC 28.8
+GID 25.1
+GIE 30.8
+GIF 19.4
+GIG 23.8
+GIH 26.8
+GII 32.6
+GIK 27.9
+GIL 22.8
+GIM 33.7
+GIN 21.4
+GIP 32.2
+GIQ 32.4
+GIR 38.3
+GIS 26.1
+GIT 30.8
+GIV 31.1
+GIW 17.2
+GIY 21.3
+
+; Gly-K-Y series
+GKA 35.1
+GKC 31.9
+GKF 22.5
+GKG 26.9
+GKH 29.9
+GKI 35.7
+GKK 31.0
+GKL 25.9
+GKM 36.8
+GKP 35.3
+GKS 29.2
+GKT 33.9
+GKV 34.2
+GKW 20.3
+GKY 24.4
+
+; Gly-L-Y series
+GLC 29.4
+GLD 25.7
+GLE 31.4
+GLF 20.0
+GLG 24.4
+GLH 27.4
+GLI 33.2
+GLM 34.3
+GLN 22.0
+GLP 32.8
+GLR 38.9
+GLS 26.7
+GLT 31.4
+GLV 31.7
+GLW 17.8
+GLY 21.9
+
+; Gly-M-Y series
+GMA 32.2
+GMC 29.0
+GMD 25.3
+GME 31.0
+GMF 19.6
+GMG 24.0
+GMH 27.0
+GMI 32.8
+GML 23.0
+GMM 33.9
+GMN 21.6
+GMP 32.4
+GMQ 32.6
+GMR 38.5
+GMS 26.3
+GMT 31.0
+GMV 31.3
+GMW 17.4
+GMY 21.5
+
+; Gly-N-Y series
+GNA 31.9
+GNC 28.7
+GND 25.0
+GNE 30.7
+GNF 19.3
+GNG 23.7
+GNH 26.7
+GNI 32.5
+GNK 27.8
+GNL 22.7
+GNM 33.6
+GNN 21.3
+GNP 32.1
+GNQ 32.3
+GNR 38.2
+GNS 26.0
+GNT 30.7
+GNV 31.0
+GNW 17.1
+GNY 21.2
+
+; Gly-Q-Y series
+GQA 34.0
+GQC 30.8
+GQD 27.1
+GQE 32.8
+GQF 21.4
+GQG 25.8
+GQH 28.8
+GQI 34.6
+GQL 24.8
+GQM 35.7
+GQN 23.4
+GQP 34.2
+GQQ 34.4
+GQS 28.1
+GQT 32.8
+GQV 33.1
+GQW 19.2
+GQY 23.3
+
+; Gly-R-Y series
+GRA 34.2
+GRC 31.0
+GRF 21.6
+GRG 26.0
+GRH 29.0
+GRI 34.8
+GRL 25.0
+GRM 35.9
+GRN 23.6
+GRP 34.4
+GRQ 34.6
+GRR 40.5
+GRT 33.0
+GRV 33.3
+GRW 19.4
+GRY 23.5
+
+; Gly-S-Y series
+GSA 31.6
+GSC 28.4
+GSD 24.7
+GSE 30.4
+GSF 19.0
+GSG 23.4
+GSH 26.4
+GSI 32.2
+GSK 27.5
+GSL 22.4
+GSM 33.3
+GSN 21.0
+GSP 31.8
+GSQ 32.0
+GSR 37.9
+GSS 25.7
+GST 30.4
+GSV 30.7
+GSW 16.8
+GSY 20.9
+
+; Gly-T-Y series
+GTA 29.8
+GTC 26.6
+GTD 22.9
+GTE 28.6
+GTF 17.2
+GTG 21.6
+GTH 24.6
+GTI 30.4
+GTK 25.7
+GTL 20.6
+GTM 31.5
+GTN 19.2
+GTP 30.0
+GTQ 30.2
+GTR 36.1
+GTS 23.9
+GTT 28.6
+GTV 28.9
+GTW 15.0
+GTY 19.1
+
+; Gly-V-Y series
+GVA 32.5
+GVC 29.3
+GVD 25.6
+GVE 31.3
+GVF 19.9
+GVG 24.3
+GVH 27.3
+GVI 33.1
+GVL 23.3
+GVM 34.2
+GVN 21.9
+GVP 32.7
+GVQ 32.9
+GVR 38.8
+GVS 26.6
+GVT 31.3
+GVV 31.6
+GVW 17.7
+GVY 21.8
+
+; Gly-W-Y series
+GWA 25.5
+GWC 22.3
+GWD 18.6
+GWE 24.3
+GWF 12.9
+GWG 17.3
+GWH 20.3
+GWI 26.1
+GWK 21.4
+GWL 16.3
+GWM 27.2
+GWN 14.9
+GWP 25.7
+GWQ 25.9
+GWR 31.8
+GWS 19.6
+GWT 24.3
+GWV 24.6
+GWW 10.7
+GWY 14.8
+
+; Gly-Y-Y series
+GYA 27.9
+GYC 24.7
+GYD 21.0
+GYE 26.7
+GYF 15.3
+GYG 19.7
+GYH 22.7
+GYI 28.5
+GYK 23.8
+GYL 18.7
+GYM 29.6
+GYN 17.3
+GYP 28.1
+GYQ 28.3
+GYR 34.2
+GYS 22.0
+GYT 26.7
+GYV 27.0
+GYW 13.1
+GYY 17.2
+
+; =================================================================
+; FALLBACK ESTIMATES (missing one additivity component)
+; Mainly Gly-O-Y series — no experimental G(O)O value exists
+; =================================================================
+
+GOA 32.0  ; fallback: GPA known, avg X destab=-8.9
+GOC 28.8  ; fallback: GPC known, avg X destab=-8.9
+GOD 25.1  ; fallback: GPD known, avg X destab=-8.9
+GOE 30.8  ; fallback: GPE known, avg X destab=-8.9
+GOF 19.4  ; fallback: GPF known, avg X destab=-8.9
+GOG 23.8  ; fallback: GPG known, avg X destab=-8.9
+GOH 26.8  ; fallback: GPH known, avg X destab=-8.9
+GOI 32.6  ; fallback: GPI known, avg X destab=-8.9
+GOK 27.9  ; fallback: GPK known, avg X destab=-8.9
+GOL 22.8  ; fallback: GPL known, avg X destab=-8.9
+GOM 33.7  ; fallback: GPM known, avg X destab=-8.9
+GON 21.4  ; fallback: GPN known, avg X destab=-8.9
+GOO 38.4  ; fallback: GPO known, avg X destab=-8.9
+GOP 32.2  ; fallback: GPP known, avg X destab=-8.9
+GOQ 32.4  ; fallback: GPQ known, avg X destab=-8.9
+GOR 38.3  ; fallback: GPR known, avg X destab=-8.9
+GOS 26.1  ; fallback: GPS known, avg X destab=-8.9
+GOT 30.8  ; fallback: GPT known, avg X destab=-8.9
+GOV 31.1  ; fallback: GPV known, avg X destab=-8.9
+GOW 17.2  ; fallback: GPW known, avg X destab=-8.9
+GOY 21.3  ; fallback: GPY known, avg X destab=-8.9
+

@@ -1,0 +1,19 @@
+# Core — needed to fetch data, score, and make figures.
+huggingface_hub>=0.24
+pyarrow>=14          # parquet
+pandas>=2.0
+numpy>=1.24
+gemmi>=0.6           # mmCIF parsing
+scipy>=1.11          # wilcoxon, in figures
+matplotlib>=3.7
+requests>=2.31       # RCSB API, in 1_download
+tqdm>=4.66
+
+# Deterministic build (2_deterministic_build) — needs AmberTools' tleap on PATH
+# as well, which pip cannot install. See notes/PAPER_METHODS.md.
+parmed>=4.0
+
+# ML prediction (3_ml_prediction) — only needed to regenerate predictions.
+# The predictions themselves are on HuggingFace, so scoring does not need these.
+# modal>=0.64
+# torch>=2.0

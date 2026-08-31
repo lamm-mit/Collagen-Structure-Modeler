@@ -1,0 +1,52 @@
+; Smoothing parameters for transitions from IR -> AR type helices.
+; For THeBuScr - Rainey & Goh.
+; Derived for transitions occurring over 3 residue stretches at same
+; displacement, but different register of the primary sequence.
+; Derived based on data in Rainey & Goh, Protein Sci. (2002). Need to be
+; rederived if parameters for IR or AR helix are changed.
+
+; For simplity, chain B is kept at "constant" angle & chains A & C are
+; adjusted as necessary
+
+; Note also, values are given for IR -> AR; AR -> IR is just negative.
+
+; format for each line
+; smooth_Ang_ABC # delta
+; where ABC is transition triplet for chain number # requiring delta as change
+; in angle, in degrees.
+
+; Case 1: chain A YGX
+;               B XYG
+;               C GXY
+
+smooth_Ang_YGX 1 -3.775
+smooth_Ang_XYG 2 0
+smooth_Ang_GXY 3 -14.25
+
+smooth_dX_YGX 1 0.03
+smooth_dX_XYG 2 0
+smooth_dX_GXY 3 0.39
+
+; Case 2: chain A GXY
+;               B YGX
+;               C XYG
+
+smooth_Ang_GXY 1 2.525
+smooth_Ang_YGX 2 0
+smooth_Ang_XYG 3 3.775
+
+smooth_dX_GXY 1 0.24
+smooth_dX_YGX 2 0
+smooth_dX_XYG 3 -0.03
+
+; Case 3: chain A XYG
+;               B GXY
+;               C YGX
+
+smooth_Ang_XYG 1 14.25
+smooth_Ang_GXY 2 0
+smooth_Ang_YGX 3 -2.525
+
+smooth_dX_XYG 1 -0.39
+smooth_dX_GXY 2 0
+smooth_dX_YGX 3 -0.24

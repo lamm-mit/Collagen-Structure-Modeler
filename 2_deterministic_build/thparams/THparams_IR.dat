@@ -1,0 +1,83 @@
+; Constant parameters for imino rich regions of triple helix including the
+; incorporation of 1K6F.
+; Values in Rainey & Goh - Protein Sci Nov 02.
+; Based upon IDL program CoordExtract13.pro - Aug/02. (Available upon request)
+
+; CA Parameters - note all other Gly_Gly's are set to same as CA
+; Angles relative to a given gly
+CA_Ang_Gly_X -1.4
+;CA_Ang_Gly_Y -22
+CA_Ang_X_Y -20.6
+;CA_Ang_Gly_Gly 53
+CA_Ang_Y_Gly 75
+
+; Radii of given type (angstroms)
+CA_Gly_R 1.83
+CA_X_R 4.10
+CA_Y_R 3.14
+
+; delta-X for given shift - each triplet is 8.53 A apart currently
+CA_dX_Gly_X 3.03
+CA_dX_X_Y 3.46
+CA_dX_Y_Gly 2.04
+
+; Chain to Chain offset
+CA_dX_Ch 2.84
+CA_Ang_Ch -102.
+
+; Caronyl C atom Parameters --------------------------------------------------
+
+; Radii of given type (angstroms)
+CO_Gly_R 2.63
+CO_X_R 3.21
+CO_Y_R 2.61
+
+; To CA offset
+CO_Ang_Gly_toCA -12
+CO_dX_Gly_toCA 1.21
+CO_Ang_X_toCA -3.7
+CO_dX_X_toCA 1.22
+CO_Ang_Y_toCA 26
+CO_dX_Y_toCA 0.63
+
+; Caronyl O atom Parameters --------------------------------------------------
+
+; Radii of given type (angstroms)
+OC_Gly_R 3.01
+OC_X_R 2.10
+OC_Y_R 3.52
+
+; To CA offset
+OC_Ang_Gly_toCA -35
+OC_dX_Gly_toCA 1.55
+OC_Ang_X_toCA 6.5
+OC_dX_X_toCA 1.24
+OC_Ang_Y_toCA 41
+OC_dX_Y_toCA 0.47
+
+; N atom Parameters -----------------------------------------------------------
+
+; Radii of given type (angstroms)
+N_Gly_R 1.54
+N_X_R 3.35
+N_Y_R 3.82
+
+; To CA offset
+N_Ang_Gly_toCA -42
+N_dX_Gly_toCA -0.69
+N_Ang_X_toCA 6.8
+N_dX_X_toCA -1.18
+N_Ang_Y_toCA 6.8
+N_dX_Y_toCA -1.23
+
+; C-beta atom Parameters ------------------------------------------------------
+
+; Radii of given type (angstroms)
+CB_X_R 5.16
+CB_Y_R 4.29
+
+; To CA offset
+CB_Ang_X_toCA 13
+CB_dX_X_toCA 0.20
+CB_Ang_Y_toCA -5.3
+CB_dX_Y_toCA 0.89

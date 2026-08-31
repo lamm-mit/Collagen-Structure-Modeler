@@ -1,0 +1,25 @@
+; Parameters to specify chi1 dihedral angle for placement of side-chain
+; terminal atom.
+; For THeBuScr - Rainey & Goh.
+; Values derived using same data set in Rainey & Goh, Protein Sci. (2002). 
+; Originally published in Rainey, J.K. Ph.D. Thesis (2003), University of
+; Toronto, Toronto, Ontario, Canada.
+
+; format for each line
+; chi1_X/Y helixtype Angle
+; where an angle of 500 means that chi1 is not specified.
+
+; imino rich helix - strong preference in chi1!
+chi1_X 1 29.5
+chi1_Y 1 -21.2
+
+; amino rich helix - not enough data available yet to determine chi1 preference.
+chi1_X 0 500
+chi1_Y 0 500
+
+; smooth transition helices - no data for chi1
+chi1_X 0.5 500
+chi1_Y 0.5 500
+chi1_X -0.5 500
+chi1_Y -0.5 500
+

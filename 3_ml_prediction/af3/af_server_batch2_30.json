@@ -1,0 +1,2154 @@
+[
+  {
+    "name": "7Y37",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGFPGDRGLPGPVGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "8HHI",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGFPGMKGHRGFDGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "8ZMW",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPRGDPGERGPRGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "7JX5",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPGPPGPPGPP",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 3
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 9
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "7F01",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGQRGREGPMGPRGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "4DMT",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPRGQPGVMGFPGPPGPPGPP",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 3
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 9
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 15
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 21
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 24
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 27
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 30
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "7WWR",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGKPGANGLSGERGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "7WWS",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGANGLSGERGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "6HG7",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGLKGHRGFTGLQGPPGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 32
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 35
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "6M80",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPGPRPPGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 7
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 12
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 15
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 18
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 21
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "5K86",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPRPPGPPGPPGPPG",
+          "count": 3,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 16
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "3ADM",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPSGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPSGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PGPPGPPGPPGPSGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 12
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "3A0M",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPVGPPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPVGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 10
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPVGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "6A0C",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGFRGPAGPNGIPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGFRGPAGPNGIPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGFRGPAGPNGIPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "2DRX",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGLPGLPGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PGPPGPPGPPGLPGLPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 1
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 4
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 7
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 10
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 16
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 25
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 28
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGLPGLPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "3WN8",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPRGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPRGPPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPRGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "9IBU",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "1QSU",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGEKGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGEKGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGEKGPPGPPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "3A1H",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPTGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPTGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPTGPPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "1BKV",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PGPPGPPGITGARGLAGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 1
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 4
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 7
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 25
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 28
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGITGARGLAGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGITGARGLAGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 29
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "3AH9",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PGPPGPPGPPGPPGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "8HHK",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGFDGRNGEKG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGFDGRNGEKGETGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGFDGRNGEKGETGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "4GYX",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPRGQPGVMGFPGPPGPPGPCC",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 3
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 12
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 18
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 21
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 24
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPRGQPGVMGFPGPPGPPGPCC",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 3
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 12
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 18
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 21
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 24
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPRGQPGVMGFPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 3
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 12
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 18
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 21
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 24
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "8H0F",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPKGPKGPKGKPGPEGEPGEPGEPGPKGPKG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 12
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 18
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 21
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 24
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "GPDGDPGDPGDPGPDGRPGPDGPDGPAGDPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 9
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 12
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 18
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 30
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "YGKPGPDGPDGPKGKPGPKGKPGKPGKPGKPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 4
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 16
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 25
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 28
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 31
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "7XAN",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PGPPGPPGEKGSPGAQGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 1
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 4
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 7
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 25
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGEKGSPGAQGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGEKGSPGAQGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 3
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 18
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 21
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 24
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "8H0E",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "YGPKGPKGPKGKPGPDGDPGDPGDPGPKGPKG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 25
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "YGPDGDPGDPGDPGPDGKPGPDGPDGPDGDPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 7
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 10
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 31
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "YGKPGPEGPEGPKGKPGPKGKPGKPGKPGKA",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 4
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 16
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 25
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 28
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "3A0A",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPPGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 10
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "3A19",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGPPGPPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "9PUF",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 3
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 9
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 16
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "GPPGPPGPPGPGPPGPPGPP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 3
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 6
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 9
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "2DRT",
+    "modelSeeds": [],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "PGPPGPPGPPGLPGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 1
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 4
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 7
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 10
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 16
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 25
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 28
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PGPPGPPGPPGLPGPPGPPGPPGPPGPPG",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 1
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 4
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 7
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 10
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 13
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 16
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 19
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 22
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 25
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 28
+            }
+          ]
+        }
+      },
+      {
+        "proteinChain": {
+          "sequence": "PPGPPGPPGPPGLPGPPGPPGPPGPPGP",
+          "count": 1,
+          "useStructureTemplate": false,
+          "modifications": [
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 2
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 5
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 8
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 11
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 14
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 17
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 20
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 23
+            },
+            {
+              "ptmType": "CCD_HYP",
+              "ptmPosition": 26
+            }
+          ]
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  }
+]

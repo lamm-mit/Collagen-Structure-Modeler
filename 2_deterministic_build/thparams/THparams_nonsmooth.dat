@@ -1,0 +1,53 @@
+; Parameters for transitions from IR -> AR type helices where the transition
+; occurs at a single residue.
+; For THeBuScr - Rainey & Goh.
+; Derived for transitions occurring at single residue at same displacement, 
+; but different register of the primary sequence.
+; Derived based on data in Rainey & Goh, Protein Sci. (2002). Need to be
+; rederived if parameters for IR or AR helix are changed.
+
+; For simplity, chain B is kept at "constant" angle & chains A & C are
+; adjusted as necessary
+
+; Note also, values are given for IR -> AR; AR -> IR is just negative.
+
+; format for each line
+; nonsmooth_Ang_ABC # delta
+; where ABC is transition triplet for chain number # requiring delta as change
+; in angle, in degrees.
+
+; Case 1: chain A YG
+;               B XY
+;               C GX
+
+nonsmooth_Ang_YG 1 1.7
+nonsmooth_Ang_XY 2 0
+nonsmooth_Ang_GX 3 -5.3
+
+nonsmooth_dX_YG 1 -0.16
+nonsmooth_dX_XY 2 0
+nonsmooth_dX_GX 3 0.04
+
+; Case 2: chain A GX
+;               B YG
+;               C XY
+
+nonsmooth_Ang_GX 1 -5
+nonsmooth_Ang_YG 2 0
+nonsmooth_Ang_XY 3 -1.7
+
+nonsmooth_dX_GX 1 0.2
+nonsmooth_dX_YG 2 0
+nonsmooth_dX_XY 3 0.16
+
+; Case 3: chain A XY
+;               B GX
+;               C YG
+
+nonsmooth_Ang_XY 1 5.3
+nonsmooth_Ang_GX 2 0
+nonsmooth_Ang_YG 3 5
+
+nonsmooth_dX_XY 1 -0.04
+nonsmooth_dX_GX 2 0
+nonsmooth_dX_YG 3 -0.2
