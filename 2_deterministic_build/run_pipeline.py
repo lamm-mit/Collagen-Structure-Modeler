@@ -23,18 +23,26 @@ more complete outputs per PDB entry:
 
 All four are always produced. The only choice is which PDB IDs to build.
 
-Usage (needs tleap + parmed, e.g. the MIT_environment conda env):
+Usage (needs tleap + parmed, e.g. the `collagen` conda env):
   python run_pipeline.py --pdb-id 8K4X
   python run_pipeline.py --list ids.txt
   python run_pipeline.py --all
+  OPENMM_CPU_THREADS=1 python run_pipeline.py --all --timings runtimes.csv
+
+Pinning OPENMM_CPU_THREADS=1 is what makes the relaxation reproducible: OpenMM's
+CPU platform is multi-threaded by default and varies nonbonded summation order
+run to run, so repeat builds of one target differ by ~0.05 A. See
+4_scoring/compute_cost/README.md.
 """
 
 import argparse
+import contextlib
 import csv
 import os
 import shutil
 import sys
 import tempfile
+import time
 
 import step1_backbone_builder as step1
 import step2_terminal_extension as step2
@@ -47,7 +55,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
 from data_locations import manifest_path  # noqa: E402
 
-DEFAULT_MANIFEST = manifest_path("csv")
+# Resolved lazily: manifest_path() may fetch from HuggingFace, and a caller
+# that passes --manifest explicitly should not pay that cost (or need the
+# network / huggingface_hub at all) just to parse its arguments.
+def default_manifest():
+    return manifest_path("csv")
+
 OUTPUT_ROOT = os.path.join(HERE, "outputs")   # builds are written locally
 
 # THeBuScr's Phase-1 propensity math divides by zero on these (internal Gly-X-Y
@@ -73,6 +86,26 @@ RELAX_METHODS = {
     "minimize": (step5.relax, "full_reregistered_relaxed"),
     "anneal":   (step5a.anneal, "full_reregistered_annealed"),
 }
+
+
+# ── timing instrumentation (opt-in via --timings) ────────────────────────────
+# Off by default: _TIMINGS stays None and _timed() is a pass-through, so an
+# ordinary build behaves exactly as before. Consumed by
+# 4_scoring/compute_cost/.
+_TIMINGS = None
+
+
+@contextlib.contextmanager
+def _timed(step):
+    """Accumulate wall seconds for `step` into the current structure's record."""
+    if _TIMINGS is None:
+        yield
+        return
+    t0 = time.perf_counter()
+    try:
+        yield
+    finally:
+        _TIMINGS[step] = _TIMINGS.get(step, 0.0) + (time.perf_counter() - t0)
 
 
 def load_manifest(manifest_path):
@@ -102,7 +135,8 @@ def _sidechains(chains, stage, pdb_id):
     os.close(fd)
     try:
         step1.write_backbone_pdb(backbone_pdb, chains)
-        step4.add_sidechains(backbone_pdb, out_cif)
+        with _timed(f"step4_tleap_{stage}"):
+            step4.add_sidechains(backbone_pdb, out_cif)
     finally:
         if os.path.exists(backbone_pdb):
             os.remove(backbone_pdb)
@@ -134,10 +168,12 @@ def _sidechains_and_relax(chains, pdb_id, relax_method):
     os.close(fd)
     try:
         step1.write_backbone_pdb(backbone_pdb, chains)
-        step4.add_sidechains(backbone_pdb, rr_cif, amber_out=amber_prefix)
+        with _timed("step4_tleap_full_reregistered"):
+            step4.add_sidechains(backbone_pdb, rr_cif, amber_out=amber_prefix)
         try:
-            relax_fn(f"{amber_prefix}.prmtop", f"{amber_prefix}.rst7",
-                     rx_cif, traj_dcd=traj)
+            with _timed(f"step5_{relax_method}"):
+                relax_fn(f"{amber_prefix}.prmtop", f"{amber_prefix}.rst7",
+                         rx_cif, traj_dcd=traj)
             return f"{relax_method} OK"
         except Exception as e:  # noqa: BLE001 — relaxation is non-fatal
             return f"{relax_method} FAILED: {type(e).__name__}: {str(e)[:60]}"
@@ -150,13 +186,16 @@ def _sidechains_and_relax(chains, pdb_id, relax_method):
 def build_all(pdb_id, sequences, relax_method="minimize"):
     """Produce all four outputs for one PDB ID. Returns (status, detail)."""
     try:
-        core_chains = step1.build_backbone(sequences, mode="core")
-        ext_chains = step1.build_backbone(sequences, mode="extend")
+        with _timed("step1_backbone"):
+            core_chains = step1.build_backbone(sequences, mode="core")
+            ext_chains = step1.build_backbone(sequences, mode="extend")
     except ZeroDivisionError:
         return "skipped", "THeBuScr div-by-zero (Gly-X-Y register interruption)"
 
-    full_chains = step2.extend_termini(ext_chains, sequences)
-    rereg_chains, shifts, improvement = step3.reregister(full_chains)
+    with _timed("step2_extend_termini"):
+        full_chains = step2.extend_termini(ext_chains, sequences)
+    with _timed("step3_reregister"):
+        rereg_chains, shifts, improvement = step3.reregister(full_chains)
 
     _sidechains(core_chains, "core", pdb_id)
     _sidechains(ext_chains, "extended", pdb_id)
@@ -171,21 +210,40 @@ def build_all(pdb_id, sequences, relax_method="minimize"):
 
 
 def main():
+    global OUTPUT_ROOT
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     g = ap.add_mutually_exclusive_group(required=True)
     g.add_argument("--pdb-id", help="single PDB ID to build")
     g.add_argument("--list", help="file with one PDB ID per line")
     g.add_argument("--all", action="store_true", help="build every ID in the manifest")
-    ap.add_argument("--manifest", default=DEFAULT_MANIFEST,
-                    help="manifest.csv path (default ../data/manifest.csv)")
+    ap.add_argument("--manifest", default=None,
+                    help="manifest.csv path (default: the benchmark manifest "
+                         "from data_locations)")
     ap.add_argument("--relax-method", choices=tuple(RELAX_METHODS), default="minimize",
                     help="final side-chain relaxation: 'minimize' (step5_relax) or "
                          "'anneal' (step5_anneal simulated annealing). Routes to a "
                          "separate output folder so the two can be compared.")
+    ap.add_argument("--timings", metavar="CSV",
+                    help="record per-step wall seconds to this CSV (one row per "
+                         "structure). Set OPENMM_CPU_THREADS=1 for reproducible, "
+                         "honest single-core numbers — see "
+                         "4_scoring/compute_cost/README.md.")
+    ap.add_argument("--output-root", metavar="DIR", default=OUTPUT_ROOT,
+                    help="where to write the built stages (default: ./outputs). "
+                         "Point this elsewhere for throwaway rebuilds: ./outputs "
+                         "is the working-tree half of the cdsm/* prefixes in "
+                         "data_locations.LAYOUT, so anything left there shadows "
+                         "the published structures for every reader that has not "
+                         "set COLLAGEN_DATA_ROOT, and would be pushed over them "
+                         "by `upload_to_huggingface.py --all`.")
     args = ap.parse_args()
 
-    manifest = load_manifest(args.manifest)
+    OUTPUT_ROOT = os.path.abspath(args.output_root)
+    if OUTPUT_ROOT != os.path.join(HERE, "outputs"):
+        print(f"Writing to {OUTPUT_ROOT} (not the canonical outputs/)\n")
+
+    manifest = load_manifest(args.manifest or default_manifest())
     if args.pdb_id:
         ids = [args.pdb_id.strip().upper()]
     elif args.list:
@@ -200,13 +258,37 @@ def main():
 
     print(f"Building {len(ids)} structure(s), 4 outputs each "
           f"(relax method: {args.relax_method}).\n")
-    n_ok = 0
+
+    global _TIMINGS
+    rows, n_ok = [], 0
     for pid in ids:
+        if args.timings:
+            _TIMINGS = {}
+        t0 = time.perf_counter()
         status, detail = build_all(pid, manifest[pid], relax_method=args.relax_method)
+        total_s = time.perf_counter() - t0
         mark = {"ok": "✓", "skipped": "–"}.get(status, "✗")
         print(f"  {mark} {pid} {status}: {detail}")
         n_ok += status == "ok"
+        if args.timings:
+            row = {"pdb_id": pid, "status": status,
+                   "n_residues": sum(len(s) for s in manifest[pid]) * (
+                       3 if len(manifest[pid]) == 1 else 1),
+                   "total_s": round(total_s, 4)}
+            row.update({k: round(v, 4) for k, v in _TIMINGS.items()})
+            rows.append(row)
     print(f"\nDone. {n_ok}/{len(ids)} built (×4 outputs).")
+
+    if args.timings:
+        _TIMINGS = None
+        fields = ["pdb_id", "status", "n_residues", "total_s"]
+        fields += sorted({k for r in rows for k in r} - set(fields))
+        os.makedirs(os.path.dirname(os.path.abspath(args.timings)), exist_ok=True)
+        with open(args.timings, "w", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=fields)
+            w.writeheader()
+            w.writerows(rows)
+        print(f"Wrote timings for {len(rows)} structure(s) -> {args.timings}")
 
 
 if __name__ == "__main__":
