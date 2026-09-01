@@ -16,7 +16,8 @@ You do not need to download it by hand — the code fetches what it needs.
 2_deterministic_build/     CDSM pipeline, step1 - step5
 3_ml_prediction/           per-model runners + Modal apps; shared/ also holds
                            the seed-sensitivity sweep machinery and analysis
-4_scoring/                 US-align / lDDT / TM-score scoring
+4_scoring/                 US-align / lDDT / TM-score scoring;
+                           compute_cost/ measures per-structure runtime and cost
 figures/                   figure generation + figures_png/, figures_pdf/, other_figs/
 notes/                     PAPER_METHODS.md - consolidated methods write-up
 data_locations.py          where the data lives - see below

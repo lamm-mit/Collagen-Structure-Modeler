@@ -14,6 +14,12 @@ venv/
 3_ml_prediction/outputs/
 3_ml_prediction/boltz/raw/
 4_scoring/results/
+4_scoring/compute_cost/results/
+# Benchmark rebuilds. Deliberately NOT 2_deterministic_build/outputs/, which is
+# the working-tree half of the cdsm/* prefixes: structures left there shadow the
+# published ones for readers without COLLAGEN_DATA_ROOT set, and would be pushed
+# over them by `upload_to_huggingface.py --all`.
+4_scoring/compute_cost/rebuild/
 
 # ── Run artefacts / logs ─────────────────────────────────────────────────────
 *.log
