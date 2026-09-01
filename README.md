@@ -14,7 +14,8 @@ You do not need to download it by hand — the code fetches what it needs.
 0_data/                    experimental structures + manifest   (not in git)
 1_download/                RCSB query, filtering, HF upload + dataset card
 2_deterministic_build/     CDSM pipeline, step1 - step5
-3_ml_prediction/           per-model runners + Modal apps
+3_ml_prediction/           per-model runners + Modal apps; shared/ also holds
+                           the seed-sensitivity sweep machinery and analysis
 4_scoring/                 US-align / lDDT / TM-score scoring
 figures/                   figure generation + figures_png/, figures_pdf/, other_figs/
 notes/                     PAPER_METHODS.md - consolidated methods write-up
