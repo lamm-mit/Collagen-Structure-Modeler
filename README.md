@@ -26,6 +26,9 @@ data_locations.py          where the data lives - see below
 Directories holding data (`0_data/`, `*/outputs/`, `4_scoring/results/`) are
 gitignored; they are populated from HuggingFace on demand.
 
+<img width="1021" height="762" alt="image" src="https://github.com/user-attachments/assets/08f502c1-2aa5-499b-bd5f-aae1d0580715" />
+
+
 ## Setup
 
 ```bash
@@ -117,6 +120,12 @@ rather than in the HuggingFace web UI, so it stays versioned with the code.
 
 Trajectories (~95 MB) are uploaded only with `--trajectories`, and are never
 downloaded unless explicitly requested.
+
+## Sample results 
+
+More details can be found in the full paper. 
+
+<img width="1036" height="968" alt="image" src="https://github.com/user-attachments/assets/3bba86fb-0e4b-4efd-a067-2c3061836069" />
 
 ## Notes and caveats
 
